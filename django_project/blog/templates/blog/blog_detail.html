@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% block title %}{{blog.slug}}{% endblock title %}
+
+{% block body %}
+
+<div class="card blogCard">
+  <div class="card-body">
+  <img id="thumb" src="{{blog.thumb.url}}"/>
+    <h2>{{blog.title}}</h2>
+    <p>{{blog.body}}</p>
+    <p>{{blog.date}}</p>
+    <p>{{blog.author}}</p>
+  </div>
+</div>
+    
+{% endblock body %}
